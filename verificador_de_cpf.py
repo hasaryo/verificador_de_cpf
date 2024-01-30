@@ -32,9 +32,9 @@ while True:
     if resto == 10:
         resto = 0
     if resto == int(cpf[9]):
-        print('Primeiro digito é valido.')
+        print('O primeiro digito é valido.')
     else:
-        print('CPF inválido.')
+        print('O primeiro digito é inválido. CPF inválido.')
         continue
 
     # Verifica o segundo dígito. 
