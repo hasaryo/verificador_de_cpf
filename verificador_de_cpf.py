@@ -28,7 +28,6 @@ while True:
         if multi == 1:
             break
         
-    print(soma)
     resto = (soma * 10) % 11
     if resto == 10:
         resto = 0
@@ -37,7 +36,6 @@ while True:
     else:
         print('CPF inválido.')
         continue
-    print(resto)
 
     # Verifica o segundo dígito. 
 
@@ -45,18 +43,15 @@ while True:
     soma = 0
 
     cpf_10primeiros = cpf[:10]
-    print(cpf_10primeiros)
     for i, digito in enumerate(cpf_10primeiros):
         soma += int(digito) * multi
         multi -= 1
         if multi == 1:
             break
-    print(soma)
     resto = (soma * 10) % 11
     if resto > 9:
         resto = 0
-    print(resto)
-    print(int(cpf[10]))
+    
     if resto == int(cpf[10]):
         print('O segundo digito é válido. CPF aprovado.')
     else:
