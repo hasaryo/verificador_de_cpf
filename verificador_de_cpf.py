@@ -107,3 +107,6 @@ while True:
             resto = 0
         final = cpf_10primeiros + str(resto)
         print(f'Seu CPF gerado é: {final}')
+
+    else:
+        print('Inválido.')
